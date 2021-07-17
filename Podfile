@@ -6,6 +6,6 @@ target 'UniMod' do
   # Pods for suanming.oc
   pod 'Masonry'
   pod 'mopub-ios-sdk', '~> 5.13'
-  pod 'MoPub-AdMob-Adapters', '8.7.0.0'
+  pod 'MoPub-UnityAds-Adapters', '3.7.2.1'
 
 end

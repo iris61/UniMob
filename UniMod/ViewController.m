@@ -9,10 +9,11 @@
 #import <Masonry/Masonry.h>
 #import "UniMod-Bridging-Header.h"
 @import MoPubSDK;
-@import MoPub_AdMob_Adapters;
+@import MoPub_UnityAds_Adapters;
 
-static const NSString *kIntersitialAdID = @"4f117153f5c24fa6a3a92b818a5eb630";
-static const NSString *kRewardedAdID = @"8f000bd5e00246de9c789eed39ff6096";
+static const NSString *kIntersitialAdID = @"42952260fbfb4d1bb8c92da82f9747d7";
+static const NSString *kRewardedAdID = @"069afeae9ecd40828898bfa763726327";
+static const NSString *kGameID = @"4221286";
 
 @interface ViewController ()<MPRewardedAdsDelegate, MPInterstitialAdControllerDelegate>
 
@@ -106,13 +107,17 @@ static const NSString *kRewardedAdID = @"8f000bd5e00246de9c789eed39ff6096";
 
 - (void)initMopub
 {
+    [[UnityAdsAdapterConfiguration alloc] initializeNetworkWithConfiguration:@{@"gameId" : kGameID} complete:^(NSError * _Nullable) {
+        NSLog(@"unity adapter initialization complete");
+    }];
+    
     MPMoPubConfiguration *sdkConfig = [[MPMoPubConfiguration alloc] initWithAdUnitIdForAppInitialization:kIntersitialAdID];
 
     sdkConfig.globalMediationSettings = @[];
-    sdkConfig.loggingLevel = MPBLogLevelDebug;
+    sdkConfig.loggingLevel = MPBLogLevelInfo;
     sdkConfig.allowLegitimateInterest = YES;
-    sdkConfig.additionalNetworks = @[GoogleAdMobAdapterConfiguration.class];
-    sdkConfig.mediatedNetworkConfigurations = @{}.mutableCopy;
+    sdkConfig.additionalNetworks = @[UnityAdsAdapterConfiguration.class];
+    sdkConfig.mediatedNetworkConfigurations = @{NSStringFromClass(UnityAdsAdapterConfiguration.class) : @{@"gameId" : kGameID}}.mutableCopy;
 
     [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:^{
             NSLog(@"SDK initialization complete");

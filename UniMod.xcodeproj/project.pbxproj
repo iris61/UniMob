@@ -15,6 +15,7 @@
 		2B7B136F269E8E1900FAE256 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7B136E269E8E1900FAE256 /* main.m */; };
 		2B7B141F269FEE4D00FAE256 /* blank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7B141E269FEE4D00FAE256 /* blank.swift */; };
 		C47397282001FFAD3167601F /* Pods_UniMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3A6B19942C90650435F00B /* Pods_UniMod.framework */; };
+		CD2DE04026A2A5DD0037BD0D /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2DE03F26A2A5DD0037BD0D /* UnityAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2B7B136E269E8E1900FAE256 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2B7B141E269FEE4D00FAE256 /* blank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blank.swift; sourceTree = "<group>"; };
 		2B7B1426269FEE8C00FAE256 /* UniMod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UniMod-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD2DE03F26A2A5DD0037BD0D /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47397282001FFAD3167601F /* Pods_UniMod.framework in Frameworks */,
+				CD2DE04026A2A5DD0037BD0D /* UnityAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,7 @@
 		C22012DC04E8B70685BA1FA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD2DE03F26A2A5DD0037BD0D /* UnityAds.framework */,
 				1A3A6B19942C90650435F00B /* Pods_UniMod.framework */,
 			);
 			name = Frameworks;
@@ -360,6 +364,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XG647X5D2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UniMod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,6 +391,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XG647X5D2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UniMod/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

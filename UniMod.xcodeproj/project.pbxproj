@@ -3,20 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2B7B135E269E8E1600FAE256 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7B135D269E8E1600FAE256 /* AppDelegate.m */; };
 		2B7B1361269E8E1600FAE256 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7B1360269E8E1600FAE256 /* SceneDelegate.m */; };
 		2B7B1364269E8E1600FAE256 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7B1363269E8E1600FAE256 /* ViewController.m */; };
-		2B7B1367269E8E1600FAE256 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7B1365269E8E1600FAE256 /* Main.storyboard */; };
 		2B7B1369269E8E1900FAE256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B7B1368269E8E1900FAE256 /* Assets.xcassets */; };
 		2B7B136C269E8E1900FAE256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B7B136A269E8E1900FAE256 /* LaunchScreen.storyboard */; };
 		2B7B136F269E8E1900FAE256 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7B136E269E8E1900FAE256 /* main.m */; };
+		2B7B141F269FEE4D00FAE256 /* blank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7B141E269FEE4D00FAE256 /* blank.swift */; };
+		C47397282001FFAD3167601F /* Pods_UniMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3A6B19942C90650435F00B /* Pods_UniMod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02A827F23E3750D2384BA232 /* Pods-UniMod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniMod.debug.xcconfig"; path = "Target Support Files/Pods-UniMod/Pods-UniMod.debug.xcconfig"; sourceTree = "<group>"; };
+		0D57E5D4CFCF191D0D969133 /* Pods-UniMod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniMod.release.xcconfig"; path = "Target Support Files/Pods-UniMod/Pods-UniMod.release.xcconfig"; sourceTree = "<group>"; };
+		1A3A6B19942C90650435F00B /* Pods_UniMod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniMod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7B1359269E8E1600FAE256 /* UniMod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniMod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B7B135C269E8E1600FAE256 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B7B135D269E8E1600FAE256 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,11 +28,12 @@
 		2B7B1360269E8E1600FAE256 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		2B7B1362269E8E1600FAE256 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2B7B1363269E8E1600FAE256 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2B7B1366269E8E1600FAE256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B7B1368269E8E1900FAE256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B7B136B269E8E1900FAE256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B7B136D269E8E1900FAE256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B7B136E269E8E1900FAE256 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B7B141E269FEE4D00FAE256 /* blank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blank.swift; sourceTree = "<group>"; };
+		2B7B1426269FEE8C00FAE256 /* UniMod-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UniMod-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47397282001FFAD3167601F /* Pods_UniMod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +53,8 @@
 			children = (
 				2B7B135B269E8E1600FAE256 /* UniMod */,
 				2B7B135A269E8E1600FAE256 /* Products */,
+				3B1C794C29BBFDF6B92C1827 /* Pods */,
+				C22012DC04E8B70685BA1FA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,13 +75,31 @@
 				2B7B1360269E8E1600FAE256 /* SceneDelegate.m */,
 				2B7B1362269E8E1600FAE256 /* ViewController.h */,
 				2B7B1363269E8E1600FAE256 /* ViewController.m */,
-				2B7B1365269E8E1600FAE256 /* Main.storyboard */,
 				2B7B1368269E8E1900FAE256 /* Assets.xcassets */,
 				2B7B136A269E8E1900FAE256 /* LaunchScreen.storyboard */,
 				2B7B136D269E8E1900FAE256 /* Info.plist */,
 				2B7B136E269E8E1900FAE256 /* main.m */,
+				2B7B141E269FEE4D00FAE256 /* blank.swift */,
+				2B7B1426269FEE8C00FAE256 /* UniMod-Bridging-Header.h */,
 			);
 			path = UniMod;
+			sourceTree = "<group>";
+		};
+		3B1C794C29BBFDF6B92C1827 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02A827F23E3750D2384BA232 /* Pods-UniMod.debug.xcconfig */,
+				0D57E5D4CFCF191D0D969133 /* Pods-UniMod.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C22012DC04E8B70685BA1FA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A3A6B19942C90650435F00B /* Pods_UniMod.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B7B1372269E8E1900FAE256 /* Build configuration list for PBXNativeTarget "UniMod" */;
 			buildPhases = (
+				AE6C9D5701A3B35837C292D2 /* [CP] Check Pods Manifest.lock */,
 				2B7B1355269E8E1600FAE256 /* Sources */,
 				2B7B1356269E8E1600FAE256 /* Frameworks */,
 				2B7B1357269E8E1600FAE256 /* Resources */,
+				50F487043AC401A45EA53DEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -106,6 +134,7 @@
 				TargetAttributes = {
 					2B7B1358269E8E1600FAE256 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -134,11 +163,52 @@
 			files = (
 				2B7B136C269E8E1900FAE256 /* LaunchScreen.storyboard in Resources */,
 				2B7B1369269E8E1900FAE256 /* Assets.xcassets in Resources */,
-				2B7B1367269E8E1600FAE256 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50F487043AC401A45EA53DEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniMod/Pods-UniMod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniMod/Pods-UniMod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UniMod/Pods-UniMod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE6C9D5701A3B35837C292D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UniMod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B7B1355269E8E1600FAE256 /* Sources */ = {
@@ -148,6 +218,7 @@
 				2B7B1364269E8E1600FAE256 /* ViewController.m in Sources */,
 				2B7B135E269E8E1600FAE256 /* AppDelegate.m in Sources */,
 				2B7B136F269E8E1900FAE256 /* main.m in Sources */,
+				2B7B141F269FEE4D00FAE256 /* blank.swift in Sources */,
 				2B7B1361269E8E1600FAE256 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,14 +226,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2B7B1365269E8E1600FAE256 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B7B1366269E8E1600FAE256 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2B7B136A269E8E1900FAE256 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -230,6 +293,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -282,15 +346,18 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		2B7B1373269E8E1900FAE256 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02A827F23E3750D2384BA232 /* Pods-UniMod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XG647X5D2;
 				INFOPLIST_FILE = UniMod/Info.plist;
@@ -300,15 +367,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uni.UniMod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UniMod/UniMod-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		2B7B1374269E8E1900FAE256 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D57E5D4CFCF191D0D969133 /* Pods-UniMod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XG647X5D2;
 				INFOPLIST_FILE = UniMod/Info.plist;
@@ -318,6 +390,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = uni.UniMod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UniMod/UniMod-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
